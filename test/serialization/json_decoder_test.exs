@@ -18,7 +18,7 @@ defmodule Commanded.Serialization.JsonDecoderTest do
     end
   end
 
-  @serialized_event_json "{\"datetime\":\"2016-09-20T20:01:02Z\",\"name\":\"Ben\"}"
+  @serialized_event_json "{\"name\":\"Ben\",\"datetime\":\"2016-09-20T20:01:02Z\"}"
 
   test "should serialize value to JSON" do
     {:ok, dt, _} = DateTime.from_iso8601("2016-09-20 20:01:02Z")
